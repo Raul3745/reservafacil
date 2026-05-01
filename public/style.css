@@ -1,0 +1,316 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+    background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #1f2d3d;
+    padding: 15px 30px;
+    display: flex;
+}
+
+nav a,
+#darkBtn {
+    flex: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* botón */
+#darkBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    line-height: 1;
+    padding: 4px 6px;  
+    cursor: pointer;
+}
+
+nav a:hover,
+#darkBtn:hover {
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* CONTENEDOR ANCHO */
+.container-wide {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+}
+
+/* PANEL */
+.panel {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* TITULOS */
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* FORMULARIOS */
+form {
+    background: #f9fbfd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* BOTONES */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* BOTONES GENERALES */
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+/* BOTÓN ELIMINAR */
+.btn-danger {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+/* CARDS */
+.card {
+    background: #ffffff;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* DASHBOARD GRID */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.dashboard .card {
+    text-align: center;
+    border-left: none;
+}
+
+/* LINKS COMO BOTONES */
+a.card {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+a.card:hover {
+    background: #f1f1f1;
+}
+
+/* CALENDARIO */
+.fc {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100% !important;
+}
+
+.fc-event {
+    font-size: 12px;
+    white-space: normal !important;
+}
+
+.fc-daygrid-event {
+    white-space: normal !important;
+    word-break: break-word;
+    font-size: 13px;
+    padding: 3px;
+}
+
+.fc-daygrid-day {
+    height: 120px;
+}
+
+.fc-daygrid-day-frame {
+    min-height: 120px;
+}
+
+.fc-toolbar-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#calendar {
+    width: 100%;
+}
+
+/* MENSAJES */
+p {
+    margin: 10px 0;
+}
+
+/* LOGIN */
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+}
+
+.auth-container form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1f2d3d;
+    color: white;
+}
+
+/* MODO OSCURO */
+
+/* contenedores */
+body.dark .container,
+body.dark .container-wide,
+body.dark .card,
+body.dark .panel {
+    background: #2f3640;
+    color: #ecf0f1;
+    border-color: #444;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* navbar */
+body.dark nav {
+    background: #0f1720;
+}
+
+/* botones */
+body.dark .btn-primary {
+    background: #2980b9;
+}
+
+body.dark .btn-danger {
+    background: #c0392b;
+}
+
+/* calendario */
+body.dark .fc {
+    background: #2f3640;
+    color: white;
+}
+
+body.dark form{
+    background: #2f3640;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
